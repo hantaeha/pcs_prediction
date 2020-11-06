@@ -5,132 +5,119 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
-    html{
-      padding: 0;
-      margin: 0;
-      font-family: 'Roboto', 'sans-serif';
-      height: 100%;
-      width: 100%;
-      background: linear-gradient( to right, #8093f1, #b388eb);
-      color: #fff;
-    }
+  h1{
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  table{
+    width:100%;
+    table-layout: fixed;
+  }
+  .tbl-header{
+    background-color: rgba(255,255,255,0.3);
+   }
+  .tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
 
-    .heading{
-      position: relative;
-      display: flex;
-      justify-content: center;
-      margin-top: 60px;
-      text-align: center;
-      font-size: 2rem;
-    }
 
-    .table{
-     margin-left: auto;
-     margin-right: auto;
-     border: 2px solid #72ddf7;
-     font-size: 1rem;
-     text-align: left;
-    }
+  /* demo styles */
 
-    .fix-div{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      background: linear-gradient(to right, #72ddf7, #a8dadc);
-    }
-    .tbody{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      height:200px;
-      overflow-y: scroll;
-      grid-gap: 20px;
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
-    }
+  html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', 'sans-serif';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( to right, #8093f1, #b388eb);
+    color: #fff;
+  }
+  section{
+    margin: 50px;
+  }
 
-    ::-webkit-scrollbar{
+  /* for custom scrollbar for webkit browser*/
+
+  ::-webkit-scrollbar {
       width: 6px;
-    }
-    ::-webkit-scrollbar-track{
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    }
-
-    ::-webkit-scrollbar-thumb{
+  }
+  ::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    }
-
-    .fix-div > div {
-        padding: 15px;
-
-    }
-    .first > div{
-        padding: 10px;
-        border-bottom: solid 1px rgba(255,255,255,0.1);
-    }
-
-    .second > div{
-        padding: 10px;
-        border-bottom: solid 1px rgba(255,255,255,0.1);
-    }
-
-    .third > div{
-      padding: 10px;
-        border-bottom: solid 1px rgba(255,255,255,0.1);
-    }
-
-    @media screen and (max-width: 700px){
-      .fix-div{
-        font-size: 14px;
-      }
-      .tbody{
-        font-size: 14px;
-      }
-    }
-
-    @media screen and (max-width: 500px){
-      .fix-div{
-        font-size: 12px;
-      }
-    }
-    @media screen and (max-width: 400px){
-      .fix-div{
-        font-size: 10px;
-      }
-    }
+  }
+  ::-webkit-scrollbar-thumb {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
     </style>
 
 </head>
 <body>
-  <p class='heading'><a href="index.html" style="text-decoration:underline ; color:#fff">PCS3 PREDICTION</a></p>
-  <div class='container'>
-    <div class='table'>
-      <div class='fix-div'>
-        <div>CONTINENTAL</div>
-        <div>WINNER</div>
-        <div>TOTAL POINTS</div>
-      </div>
-      <div class='tbody'>
-        <div class='first'>
-          <div><a href="asia.html" style="text-decoration:underline ; color:#fff">ASIA (Day 2/6)</a></div>
-          <div><a href="#" style="text-decoration:underline ; color:#fff">ASIA PACIFIC</a></div>
-          <div><a href="#" style="text-decoration:underline ; color:#fff">EUROPE</a></div>
-          <div><a href="northamerica.html" style="text-decoration:underline ; color:#fff">NORTH AMERICA (Day 1/6)</a></div>
-        </div>
-      <div class='second'>
-        <div>MULTI CIRCLE GAMING</div>
-        <div>TBD</div>
-        <div>TBD</div>
-        <div>TEAM VERITAS</div>
-      </div>
-      <div class='third'>
-        <div>240</div>
-        <div>TBD</div>
-        <div>TBD</div>
-        <div>312</div>
-      </div>
+  <section>
+    <!--for demo wrap-->
+    <h1><a href="index.html" style="text-decoration:underline ; color:#fff">PCS3 PREDICTION</a></h1>
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>CONTINENTAL</th>
+            <th>WINNER</th>
+            <th>TOTAL POINTS</th>
+          </tr>
+        </thead>
+      </table>
     </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+          <tr>
+            <td><a href="asia.html" style="text-decoration:underline ; color:#fff">ASIA (Day 2/6)</a></td>
+            <td>MULTI CIRCLE GAMING</td>
+            <td>240</td>
+          </tr>
+          <tr>
+            <td><a href="#" style="text-decoration:underline ; color:#fff">ASIA PACIFIC</a></td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td><a href="#" style="text-decoration:underline ; color:#fff">EUROPE</a></td>
+            <td>TBD</td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td><a href="northamerica.html" style="text-decoration:underline ; color:#fff">NORTH AMERICA (Day 1/6)</a></td>
+            <td>TEAM VERITAS</td>
+            <td>312</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    </div>
-    <p>
+  </section>
 </body>
 </html>
