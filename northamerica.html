@@ -1,174 +1,185 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PCS PREDICTION</title>
+  <title>NORTH AMERICA</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
-    html{
-      padding: 0;
-      margin: 0;
-      font-family: 'Roboto', 'sans-serif';
-      height: 100%;
-      width: 100%;
-      background: linear-gradient( to right, #8093f1, #b388eb);
-      color: #fff;
-    }
+  h1{
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  table{
+    width:100%;
+    table-layout: fixed;
+  }
+  .tbl-header{
+    background-color: rgba(255,255,255,0.3);
+   }
+  .tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
 
-    .heading{
-      position: relative;
-      display: flex;
-      justify-content: center;
-      margin-top: 60px;
-      text-align: center;
-      font-size: 2rem;
-    }
 
-    .table{
-     margin-left: auto;
-     margin-right: auto;
-     border: 2px solid #72ddf7;
-     font-size: 1rem;
-     text-align: left;
-    }
+  /* styles */
 
-    .fix-div{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      background: linear-gradient(to right, #72ddf7, #a8dadc);
-    }
-    .tbody{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      height:200px;
-      overflow-y: scroll;
-      grid-gap: 20px;
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
-    }
+  html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', 'sans-serif';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( to right, #8093f1, #b388eb);
+    color: #fff;
+  }
+  section{
+    margin: 50px;
+  }
 
-    ::-webkit-scrollbar{
+  /* for custom scrollbar for webkit browser*/
+
+  ::-webkit-scrollbar {
       width: 6px;
-    }
-    ::-webkit-scrollbar-track{
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    }
-
-    ::-webkit-scrollbar-thumb{
+  }
+  ::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    }
-
-    .fix-div > div {
-        padding: 15px;
-
-    }
-    .first > div{
-        padding: 10px;
-        border-bottom: solid 1px rgba(255,255,255,0.1);
-    }
-
-    .second > div{
-        padding: 10px;
-        border-bottom: solid 1px rgba(255,255,255,0.1);
-    }
-
-    .third > div{
-      padding: 10px;
-        border-bottom: solid 1px rgba(255,255,255,0.1);
-    }
-
-    @media screen and (max-width: 700px){
-      .fix-div{
-        font-size: 14px;
-      }
-      .tbody{
-        font-size: 14px;
-      }
-    }
-
-    @media screen and (max-width: 500px){
-      .fix-div{
-        font-size: 12px;
-      }
-    }
-    @media screen and (max-width: 400px){
-      .fix-div{
-        font-size: 10px;
-      }
-    }
+  }
+  ::-webkit-scrollbar-thumb {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
     </style>
 
 </head>
 <body>
-  <p class='heading'><a href="index.html" style="text-decoration:underline ; color:#fff">PCS3 PREDICTION</a></p>
-  <div class='container'>
-    <div class='table'>
-      <div class='fix-div'>
-        <div>PLACE</div>
-        <div>TEAM</div>
-        <div>TOTAL POINTS</div>
-      </div>
-      <div class='tbody'>
-        <div class='first'>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
-          <div>10</div>
-          <div>11</div>
-          <div>12</div>
-          <div>13</div>
-          <div>14</div>
-          <div>15</div>
-          <div>16</div>
-        </div>
-      <div class='second'>
-        <div>TEAM VERITAS</div>
-        <div>SONIQS</div>
-        <div>OATH GAMING</div>
-        <div>DUEL</div>
-        <div>ZENITH ESPORTS</div>
-        <div>DODGE</div>
-        <div>SHOOT TO KILL</div>
-        <div>THE RUMBLERS</div>
-        <div>HOUSTON HARDSHIFTS</div>
-        <div>ILLUSION</div>
-        <div>GUADALAJARA GASCANS</div>
-        <div>ONE EYE OPEN</div>
-        <div>ANY TROLLS IN CHAT</div>
-        <div>TACTICAL8</div>
-        <div>COMETS</div>
-        <div>FABLED</div>
-      </div>
-      <div class='third'>
-        <div>312</div>
-        <div>246</div>
-        <div>240</div>
-        <div>204</div>
-        <div>192</div>
-        <div>162</div>
-        <div>144</div>
-        <div>144</div>
-        <div>96</div>
-        <div>84</div>
-        <div>84</div>
-        <div>72</div>
-        <div>66</div>
-        <div>54</div>
-        <div>42</div>
-        <div>36</div>
-      </div>
+  <section>
+    <h1><a href="index.html" style="text-decoration:underline ; color:#fff">PCS3 PREDICTION</a></h1>
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>PLACE</th>
+            <th>TEAM</th>
+            <th>TOTAL POINTS</th>
+          </tr>
+        </thead>
+      </table>
     </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>TEAM VERITAS</td>
+            <td>312</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>SONIQS</td>
+            <td>246</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>OATH GAMING</td>
+            <td>240</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>DUEL</td>
+            <td>204</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>ZENITH ESPORTS</td>
+            <td>192</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>DODGE</td>
+            <td>162</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>SHOOT TO KILL</td>
+            <td>144</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>THE RUMBLERS</td>
+            <td>144</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>HOUSTON HARDSHIFTS</td>
+            <td>96</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>ILLUSION</td>
+            <td>84</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>GUADALAJARA GASCANS</td>
+            <td>84</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>ONE EYE OPEN</td>
+            <td>72</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>ANY TROLLS IN CHAT</td>
+            <td>66</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>TACTICAL8</td>
+            <td>54</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>COMETS</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>FABLED</td>
+            <td>36</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    </div>
-    <p>
-      <div><center>BASED ON THE AVERAGE VALUE</div><p>
-      <div><center>ERROR RANGE : 0 ~ 50 POINTS</div>
+  </section>
+  <p>
+    <div><center>BASED ON THE AVERAGE VALUE</div><p>
+    <div><center>ERROR RANGE : 0 ~ 50 POINTS</div>
 </body>
 </html>
